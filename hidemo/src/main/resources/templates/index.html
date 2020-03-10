@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ 欢迎<br>
+ <span role="presentation" th:if="${session.isAuth!=null ? session.isAuth : false}">登陆成功</span>
+ <br>
+ <button role="presentation" th:if="${session.isAuth!=null ? !session.isAuth : true}"><a th:href="@{/signin}">登录</a></button>
+ <button role="presentation" th:if="${session.isAuth!=null ? session.isAuth : false}"><a th:href="@{/logout}">退出</a></button>
+</body>
+</html>

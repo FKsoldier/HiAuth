@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hi-mall-common" />
+        <module name="hi-mall-microsvr-goods" />
+        <module name="hi-mall-starter-monitor" />
+        <module name="hi-mall-entity" />
+        <module name="hi-mall-core" />
+        <module name="hi-mall-starter-swagger2" />
+        <module name="hi-mall-microsvr-api" />
+        <module name="hi-mall-microsvr-order" />
+        <module name="hi-mall-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hi-mall" target="1.5" />
+      <module name="hi-mall-common" target="1.8" />
+      <module name="hi-mall-core" target="1.8" />
+      <module name="hi-mall-entity" target="1.8" />
+      <module name="hi-mall-microsvr-api" target="1.8" />
+      <module name="hi-mall-microsvr-goods" target="1.8" />
+      <module name="hi-mall-microsvr-order" target="1.8" />
+      <module name="hi-mall-starter-monitor" target="1.8" />
+      <module name="hi-mall-starter-swagger2" target="1.8" />
+      <module name="hi-mall-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,56 @@
+
+server:
+  port: 8181
+  servlet.context-path: /hiauth
+
+logging.level:
+  root: DEBUG
+  com.bestaone.aiwan: DEBUG
+
+spring.datasource:
+  driver-class-name: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/hiauth?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+  username: root
+  password: root
+
+spring.redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 11
+    password:
+
+spring.session.store-type: none
+spring.devtools.restart.enabled: true
+
+spring.jackson:
+  default-property-inclusion: non_null
+  serialization.write-dates-as-timestamps: true
+
+# 不配的话，打成jar无法访问页面
+spring.thymeleaf:
+    cache: true
+    prefix: classpath:/templates
+    mode: HTML5
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.bestaone.hiauth.domain
+
+pagehelper:
+  helperDialect: mysql
+  supportMethodsArguments: true
+  autoRuntimeDialect: true
+  offsetAsPageNum: true
+  rowBoundsWithCount: true
+  reasonable: false
+  returnPageInfo: true
+  params: count=countSql
+
+swagger2.auth:
+  clientId: hiauth_swagger2
+  clientSecret: 123456
+  authorizationUri: http://localhost:8181/hiauth/oauth/authorize
+  tokenUri: http://localhost:8181/hiauth/oauth/token
+  scopes: AUTH
+
+hiauth.cacheControl.maxAge : 0

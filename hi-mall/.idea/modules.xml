@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hi-mall.iml" filepath="$PROJECT_DIR$/hi-mall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hi-mall-common/hi-mall-common.iml" filepath="$PROJECT_DIR$/hi-mall-common/hi-mall-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hi-mall-core/hi-mall-core.iml" filepath="$PROJECT_DIR$/hi-mall-core/hi-mall-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hi-mall-entity/hi-mall-entity.iml" filepath="$PROJECT_DIR$/hi-mall-entity/hi-mall-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hi-mall-microsvr-api/hi-mall-microsvr-api.iml" filepath="$PROJECT_DIR$/hi-mall-microsvr-api/hi-mall-microsvr-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hi-mall-microsvr-goods/hi-mall-microsvr-goods.iml" filepath="$PROJECT_DIR$/hi-mall-microsvr-goods/hi-mall-microsvr-goods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hi-mall-microsvr-order/hi-mall-microsvr-order.iml" filepath="$PROJECT_DIR$/hi-mall-microsvr-order/hi-mall-microsvr-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hi-mall-starter-monitor/hi-mall-starter-monitor.iml" filepath="$PROJECT_DIR$/hi-mall-starter-monitor/hi-mall-starter-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hi-mall-starter-swagger2/hi-mall-starter-swagger2.iml" filepath="$PROJECT_DIR$/hi-mall-starter-swagger2/hi-mall-starter-swagger2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hi-mall-web/hi-mall-web.iml" filepath="$PROJECT_DIR$/hi-mall-web/hi-mall-web.iml" />
+    </modules>
+  </component>
+</project>

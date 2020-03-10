@@ -1,0 +1,46 @@
+
+server:
+  port: 8182
+  servlet.context-path: /himall
+
+logging.level:
+  root: DEBUG
+  com.bestaone: DEBUG
+
+spring.datasource:
+  driver-class-name: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/hiauth?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+  username: root
+  password: root
+
+# 不配的话，打成jar无法访问页面
+spring.thymeleaf:
+    cache: true
+    prefix: classpath:/templates
+    mode: HTML5
+
+security.oauth2:
+  hiAuth:
+    client:
+      clientId: himall_client_id
+      clientSecret: 123456
+      accessTokenUri: http://localhost:8181/hiauth/oauth/token
+      userAuthorizationUri: http://localhost:8181/hiauth/oauth/authorize
+      revokeTokenUri: http://localhost:8181/hiauth/oauth/revoke_token
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: http://localhost:8181/hiauth/api/user/profile
+
+ribbon:
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 1
+  OkToRetryOnAllOperations: true
+  ServerListRefreshInterval: 2000
+  ConnectTimeout: 3000
+  ReadTimeout: 3000
+  EnablePrimeConnections: false
+
+order-svr.ribbon.listOfServers: http://localhost:8282,http://localhost:8282
+goods-svr.ribbon.listOfServers: http://localhost:8281,http://localhost:8281
+
+hiMall.oAuth2.callbackUrl: http://localhost:8182/himall/callback

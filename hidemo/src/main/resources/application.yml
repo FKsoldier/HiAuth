@@ -1,0 +1,25 @@
+
+server:
+  port: 8081
+  servlet.context-path: /hidemo
+
+spring.datasource:
+  driver-class-name: com.mysql.jdbc.Driver
+  url: @hiauth.database.url@
+  username: @hiauth.database.username@
+  password: @hiauth.database.password@
+
+
+security.oauth2:
+  hiAuth:
+    client:
+      clientId: @hiauth.auth.clientId@
+      clientSecret: @hiauth.auth.clientSecret@
+      accessTokenUri: @hiauth.auth.accessTokenUri@
+      userAuthorizationUri: @hiauth.auth.userAuthorizationUri@
+      revokeTokenUri: @hiauth.auth.revokeTokenUri@
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: @hiauth.auth.userInfoUri@
+
+hidemo.oAuth2.callbackUrl: @hidemo.oAuth2.callbackUrl@
